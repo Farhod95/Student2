@@ -1,30 +1,35 @@
-# 📝 Student Names Console Project
+# 🎓 Student Management Console Application
 
 ## 🌟 Loyihaning maqsadi
-Ushbu loyiha **C# va LINQ** yordamida studentlar ro‘yxatidan faqat **ism** maydonini chiqarish va natijani **console** orqali ko‘rsatishga mo‘ljallangan.
+Ushbu loyiha **C# va LINQ** yordamida studentlar bilan ishlashni osonlashtiradi.  
+Dastur quyidagi imkoniyatlarni taqdim etadi:
+
+- Student qo‘shish  
+- Studentlar ro‘yxatini chiqarish  
+- Studentlarni **ID** bo‘yicha o‘chirish  
+- Studentlarni **ID, Ism yoki Familiya** bo‘yicha qidirish  
+- Studentlarning ma’lum bir qiymatini yangilash (**Ism, Familiya, Code, Email**)  
+- Studentlarni faqat **ismlarini alifbo tartibida** chiqarish  
 
 ---
 
 ## ⚡ Texnologiyalar
-- C# 10 / .NET 6+
-- LINQ
-- Console Application
+- C# 10 / .NET 6+  
+- LINQ  
+- Console Application  
+- Object-Oriented Programming (OOP)
 
 ---
 
-## 🧩 Asosiy Kod
+## 🧩 Loyihaning strukturası
 
+### 1️⃣ Domain Layer (`Student2.Domain.Models`)
 ```csharp
-public void FaqatIsmChiqadi()
+public class Student
 {
-    // 1️⃣ Faqat studentlar ismlarini olish
-    var myStudentsName  = this._DbContext.Students
-        .Select(x => x.FirstName) // Select orqali faqat FirstName olinadi
-        .ToList();                // Natija List<string> ga aylanadi
-
-    // 2️⃣ Console ga chiqarish
-    foreach (var student in myStudentsName)
-    {
-        Console.WriteLine($"Ism: {student}");
-    }
+    public string Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Code { get; set; }
+    public string Email { get; set; }
 }
