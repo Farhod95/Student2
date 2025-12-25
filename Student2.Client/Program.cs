@@ -186,6 +186,7 @@ namespace Student2.Client
             Console.Write($" O'zgarishi kerak ismni kiriting: ");
             var text = Console.ReadLine();
             myNewStudent.UpdeteIsm(id, text);
+            Console.WriteLine("\n Ism muvofaqqiyatli o'zgartrildi \n");
         }
         public void QiymatOzgartrMalumotlarFamiliya()
         {
@@ -194,6 +195,7 @@ namespace Student2.Client
             Console.Write($" O'zgarishi kerak familiyani kiriting: ");
             var text = Console.ReadLine();
             myNewStudent.UpdeteFamiliya(id, text);
+            Console.WriteLine("\n Familiya muvofaqqiyatli o'zgartrildi \n");
         }
         public void QiymatOzgartrMalumotlarCode()
         {
@@ -202,6 +204,7 @@ namespace Student2.Client
             Console.Write($" O'zgarishi kerak code ni kiriting: ");
             var text = Console.ReadLine();
             myNewStudent.UpdeteCode(id, text);
+            Console.WriteLine("\n Code muvofaqqiyatli o'zgartrildi \n");
         }
         public void QiymatOzgartrMalumotlarEmail()
         {
@@ -210,6 +213,7 @@ namespace Student2.Client
             Console.Write($" O'zgarishi kerak Email ni kiriting: ");
             var text = Console.ReadLine();
             myNewStudent.UpdeteEmail(id, text);
+            Console.WriteLine("\n Email muvofaqqiyatli o'zgartrildi \n");
         }
     }
 }
