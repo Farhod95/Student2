@@ -1,3 +1,5 @@
+![Console App Demo](Assets/animation.gif)
+
 # 🎓 Student Management Console Application
 
 ## 🌟 Loyihaning maqsadi
